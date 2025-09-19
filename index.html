@@ -8,7 +8,9 @@
 <body>
 <button><strong>This website is under development</strong></button>    
  <Header><strong><span tabindex="1" accesskey="a" style="color:blueviolet;">AGH</span></strong><br>
-    <nav class="menu"><a href="index.html" accesskey="h" target="_blank"><i class="fa-solid fa-house"></i></a><label for="dropdown">Services</label>
+    <nav class="menu"><a href="index.html" accesskey="h" target="_blank"><i class="fa-solid fa-house"></i></a>
+    <a aria-expanded="false" href="services.html" class="menu" aria-haspopup="true">Services<span class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a>    
+        <label for="dropdown">Services</label>
   <select id="dropdown" onchange="navigateToLink()">
     <option> <a href="informationtechnology.html"></a> </option>
     <option value="advisory.html">Advisory</option>
