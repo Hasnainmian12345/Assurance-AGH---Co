@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assurance-AGH & Co, Chartered Accountants</title><link rel="icon" type="image/png" href="images\square-check-regular-full.svg"><script src="https://kit.fontawesome.com/8c1fb1253e.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>Energy</h1>
+<body><div id="header"></div>
+    <main><h1>Energy</h1>
     <section><p>We play a multifaceted role in the financial ecosystem, offering a range of services that fall into three broad categories: Assurance, Non-Assurance, and Other Related Services.
 These services are offered to energy sector, 'including but not limited to'  oil & gas, renewables, utilities, and energy efficiency services. Generally these include:<br>
 - Financial Audits: Ensuring accurate financial reporting for energy companies, which often deal with large capital expenditures and complex asset valuations.
@@ -46,6 +46,18 @@ If you’re exploring this from a professional or academic angle, I can help you
 
 
 
-</section>
+</section></main><div id="footer"></div>
+
+  <script>
+  
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+  
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 </body>
 </html>

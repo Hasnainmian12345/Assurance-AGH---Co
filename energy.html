@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assurance-AGH & Co, Chartered Accountants</title><link rel="icon" type="image/png" href="images\square-check-regular-full.svg"><script src="https://kit.fontawesome.com/8c1fb1253e.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>Energy</h1>
+<body><Div id="header"></Div>
+    <main><h1>Energy</h1>
     <section><dl>Broad Services Offered
 <ul>
     <li><a href="#1">Assurance Services</a></li>
@@ -43,6 +43,17 @@ Regulations prohibit auditors from providing certain non-assurance services to P
 
 
 
-</section>
+</section></main><Div id="footer"></Div>    
+<script>
+
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 </body>
 </html>

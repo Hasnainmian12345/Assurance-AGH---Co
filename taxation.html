@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assurance-AGH & Co, Chartered Accountants</title><link rel="icon" type="image/png" href="images\square-check-regular-full.svg"><script src="https://kit.fontawesome.com/8c1fb1253e.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>Taxation</h1>
+<body><Div id="header"></Div>
+    <main><h1>Taxation</h1>
     <section>We offer a wide range of taxation services to help individuals and businesses stay compliant with the Federal Board of Revenue (FBR) regulations. Here's a breakdown of what these services typically include:
 <br><dt>Tax Compliance Audits</dt><dd>Tax Compliance Audits Ensure that financial records and tax filings align with Pakistan’s Income Tax Ordinance 2001 and other relevant laws.</dd>
 
@@ -23,6 +23,17 @@
 <dt>Corporate and Personal Tax Services</dt> <dd>Cover everything from corporate tax strategy to personal tax filing and advisory for salaried individuals, freelancers, and entrepreneurs.</dd>
 
 
-</section>
+</section></main><Div id="footer"></Div>    
+<script>
+
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 </body>
 </html>

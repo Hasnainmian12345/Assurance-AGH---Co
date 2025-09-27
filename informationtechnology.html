@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assurance-AGH & Co, Chartered Accountants</title><link rel="icon" type="image/png" href="images\square-check-regular-full.svg"><script src="https://kit.fontawesome.com/8c1fb1253e.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>Information Technology</h1>
+<body><Div id="header"></Div>
+    <main><h1>Information Technology</h1>
     <section>An auditor in the field of information technology (IT) plays a vital role in helping businesses safeguard their digital assets, ensure compliance, and optimize operations.As companies increasingly rely on digital infrastructure, we help to
 prevent costly data breaches, maintain customer trust, avoid legal penalties and improve system performance and reliability. Here's how we serve organizations:
 
@@ -22,6 +22,17 @@ prevent costly data breaches, maintain customer trust, avoid legal penalties and
 
 <li>Report Findings to Management They prepare detailed reports outlining risks, weaknesses, and actionable recommendations, helping leadership make informed decisions.</li></ol>
 
-</section>
+</section></main><Div id="footer"></Div>    
+<script>
+
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 </body>
 </html>

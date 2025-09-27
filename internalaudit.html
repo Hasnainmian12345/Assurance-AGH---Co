@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assurance-AGH & Co, Chartered Accountants</title><link rel="icon" type="image/png" href="images\square-check-regular-full.svg"><script src="https://kit.fontawesome.com/8c1fb1253e.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>Internal Audit</h1>
+<body><div id="header"></div>
+    <main><h1>Internal Audit</h1>
     <section>Internal audit services provided by us are essential for strengthening an organization's internal controls, risk management, and governance processes.These services enhance transparency and accountability,
 reduce operational & financial risks ,improve compliance/governance and support strategic decision-making. Here's a breakdown of what these services typically include:
 <dt>Risk Assessment & Management:</dt> <dd>Identifying and evaluating risks that could impact business objectives.</dd>
@@ -27,6 +27,18 @@ reduce operational & financial risks ,improve compliance/governance and support 
 <dt>Real-Time Monitoring:</dt><dd> We provide internal audits that offer real-time transaction monitoring and risk assessment.</dd>
 
 <dt>Strategic Advisory:</dt> <dd>We help organizations align internal audit with strategic goals, regulatory requirements, and stakeholder expectations.</dd>
-</section>
-</body>
+</section></main>
+<div id="footer"></div>
+
+  <script>
+  
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+  
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script></body>
 </html>

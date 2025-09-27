@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assurance-AGH & Co, Chartered Accountants</title><link rel="icon" type="image/png" href="images\square-check-regular-full.svg"><script src="https://kit.fontawesome.com/8c1fb1253e.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>Consulting</h1>
+<body><Div id="header"></Div>
+    <main><h1>Consulting</h1>
     <section>We offer a wide range of consulting services that help businesses improve performance, manage risks, and plan strategically. Major consulting services we offer include:
 <dt>
 🧾1.Financial Consulting</dt>
@@ -37,6 +37,17 @@
 <li>Process improvement and operational efficiency reviews</li></ul></dd>
 
 
-</section>
+</section></main><Div id="footer"></Div>    
+<script>
+
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 </body>
 </html>
