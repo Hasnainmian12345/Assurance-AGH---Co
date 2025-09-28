@@ -1,8 +1,8 @@
-p{font-family: sans-serif;color:black;font-size: 1rem;}
-main{background-color:whitesmoke;font-size: 15px;}
+p{font-family: sans-serif;color:lightblue;font-size: 1rem;}
+main{background-color:whitesmoke;font-size: 10px;}
 h1{font-family: sans-serif; font-size: 2rem;}
 Header{
-      display: flex;font-family: sans-serif;font-size: 15px;
+      display: flex;font-family: sans-serif;font-size: 10px;
       background-color:whitesmoke;text-align: center;padding:10px
     }
 
