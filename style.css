@@ -1,18 +1,18 @@
-p{font-family: sans-serif;color:lightblue;font-size: 1rem;}
+p{font-family: sans-serif;color:black;font-size: 1rem;}
 main{background-color:whitesmoke;font-size: 10px;}
 h1{font-family: sans-serif; font-size: 2rem;}
-Header{
+nav{
       display: flex;font-family: sans-serif;font-size: 10px;
       background-color:whitesmoke;text-align: center;padding:10px
     }
 
-    Header a {
+    nav a {
       color: balck;
       text-decoration: none;
       padding: 10px 15px;
     }
 
-    Header a:hover {
+    nav a:hover {
       background-color: greenyellow;
     }
 
